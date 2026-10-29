@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Competitor Watch · Price & product monitoring dashboard</title>
+  <meta name="description" content="Live demo: a config-driven Python scraper with change detection, automated daily by GitHub Actions and published as a static dashboard.">
+  <meta property="og:title" content="Competitor Watch — price & product monitoring">
+  <meta property="og:description" content="Python scrapers + change detection + GitHub Actions + static dashboard. By Passakorn (Jimmy) Pongsangiam.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jump1852-code.github.io/competitor-watch/">
+  <meta property="og:image" content="https://jump1852-code.github.io/competitor-watch/og.png">
+  <meta name="theme-color" content="#003143">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="./" aria-label="Competitor Watch home">
+        <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#04CC9E"/><path d="M7 21l6-6 4 4 8-9" stroke="#003143" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Competitor <strong>Watch</strong></span>
+      </a>
+      <div class="topbar__meta">
+        <span class="pulse" aria-hidden="true"></span>
+        <span id="updated">Loading…</span>
+        <a class="btn btn--ghost" href="https://github.com/jump1852-code/competitor-watch" rel="noopener">
+          <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          Source
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Market intelligence · demo</p>
+        <h1>Product &amp; price changes, tracked daily.</h1>
+        <p class="lede">A config-driven Python scraper checks public demo storefronts every morning, detects new, removed and re-priced products, commits the history to Git, and redeploys this dashboard — fully automated with GitHub Actions.</p>
+      </div>
+      <aside class="notice" id="notice" hidden>
+        <strong>About this data</strong>
+        <span id="notice-text"></span>
+      </aside>
+    </section>
+
+    <section class="kpis" id="kpis" aria-label="Key figures"></section>
+
+    <section class="grid grid--charts">
+      <article class="card">
+        <header class="card__head">
+          <div><h2>Price index by source</h2><p class="muted">Average price vs first observation (=100)</p></div>
+        </header>
+        <div class="chart"><canvas id="indexChart" aria-label="Price index line chart" role="img"></canvas></div>
+      </article>
+      <article class="card">
+        <header class="card__head">
+          <div><h2>Changes per day</h2><p class="muted">Detected events, stacked by type</p></div>
+        </header>
+        <div class="chart"><canvas id="dailyChart" aria-label="Daily changes bar chart" role="img"></canvas></div>
+      </article>
+    </section>
+
+    <section class="grid grid--main">
+      <article class="card card--feed">
+        <header class="card__head">
+          <div><h2>Recent changes</h2><p class="muted" id="feed-count"></p></div>
+        </header>
+        <div class="chips" id="type-chips" role="group" aria-label="Filter by change type"></div>
+        <ol class="feed" id="feed"></ol>
+      </article>
+
+      <article class="card card--table">
+        <header class="card__head card__head--wrap">
+          <div><h2>Tracked products</h2><p class="muted" id="table-count"></p></div>
+          <div class="controls">
+            <label class="sr-only" for="search">Search products</label>
+            <input id="search" type="search" placeholder="Search products…" autocomplete="off">
+            <label class="sr-only" for="target-filter">Source</label>
+            <select id="target-filter"><option value="">All sources</option></select>
+            <label class="sr-only" for="sort">Sort</label>
+            <select id="sort">
+              <option value="changes">Most changes</option>
+              <option value="pct">Biggest move</option>
+              <option value="price-desc">Price ↓</option>
+              <option value="price-asc">Price ↑</option>
+              <option value="name">Name A–Z</option>
+            </select>
+          </div>
+        </header>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th>Product</th><th>Source</th><th class="num">Price</th><th class="num">Δ since first</th><th>Trend</th><th class="num">Events</th></tr></thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="card">
+      <header class="card__head"><div><h2>Sources</h2><p class="muted">Configured in <code>config/targets.yaml</code> · robots.txt respected · 1.5 s polite delay</p></div></header>
+      <div class="sources" id="sources"></div>
+    </section>
+  </main>
+
+  <dialog id="detail" class="detail" aria-labelledby="detail-title">
+    <form method="dialog"><button class="detail__close" aria-label="Close">×</button></form>
+    <p class="eyebrow" id="detail-source"></p>
+    <h3 id="detail-title"></h3>
+    <div class="detail__stats" id="detail-stats"></div>
+    <div class="chart chart--detail"><canvas id="detailChart"></canvas></div>
+    <a id="detail-link" class="btn" href="#" target="_blank" rel="noopener">Open product page ↗</a>
+  </dialog>
+
+  <footer class="footer wrap">
+    <p>Built by <a href="https://jump1852-code.github.io/">Passakorn (Jimmy) Pongsangiam</a> · Data from public scraping sandboxes <a href="https://books.toscrape.com">books.toscrape.com</a> and <a href="https://webscraper.io/test-sites">webscraper.io/test-sites</a> · MIT licensed</p>
+  </footer>
+</body>
+</html>
