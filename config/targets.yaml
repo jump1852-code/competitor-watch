@@ -1,0 +1,122 @@
+# Competitor Watch — target configuration
+# --------------------------------------
+# Each target is scraped with the generic, selector-driven CssScraper.
+# Add a new site by adding a block here — no Python changes required.
+#
+# All targets below are PUBLIC DEMO SITES built for scraping practice:
+#   - https://books.toscrape.com  (by Zyte / Scrapinghub)
+#   - https://webscraper.io/test-sites (by Web Scraper)
+# robots.txt is always checked before a request is made.
+
+settings:
+  user_agent: "competitor-watch/1.0 (+https://github.com/jump1852-code/competitor-watch)"
+  min_delay_seconds: 1.5      # polite per-host delay between requests
+  timeout_seconds: 20
+  max_retries: 3
+  backoff_factor: 1.0         # 1s, 2s, 4s ...
+
+targets:
+  - id: books-travel
+    name: "Books to Scrape · Travel"
+    site: books.toscrape.com
+    category: Books
+    currency: GBP
+    start_url: https://books.toscrape.com/catalogue/category/books/travel_2/index.html
+    max_pages: 2
+    item_selector: article.product_pod
+    next_page_selector: li.next a
+    fields:
+      name: { selector: "h3 a", attr: title }
+      url: { selector: "h3 a", attr: href }
+      price: { selector: "p.price_color" }
+      availability: { selector: "p.availability" }
+      rating: { selector: "p.star-rating", attr: class, map: { One: 1, Two: 2, Three: 3, Four: 4, Five: 5 } }
+      image: { selector: "img.thumbnail", attr: src }
+
+  - id: books-mystery
+    name: "Books to Scrape · Mystery"
+    site: books.toscrape.com
+    category: Books
+    currency: GBP
+    start_url: https://books.toscrape.com/catalogue/category/books/mystery_3/index.html
+    max_pages: 2
+    item_selector: article.product_pod
+    next_page_selector: li.next a
+    fields:
+      name: { selector: "h3 a", attr: title }
+      url: { selector: "h3 a", attr: href }
+      price: { selector: "p.price_color" }
+      availability: { selector: "p.availability" }
+      rating: { selector: "p.star-rating", attr: class, map: { One: 1, Two: 2, Three: 3, Four: 4, Five: 5 } }
+      image: { selector: "img.thumbnail", attr: src }
+
+  - id: books-science
+    name: "Books to Scrape · Science"
+    site: books.toscrape.com
+    category: Books
+    currency: GBP
+    start_url: https://books.toscrape.com/catalogue/category/books/science_22/index.html
+    max_pages: 1
+    item_selector: article.product_pod
+    next_page_selector: li.next a
+    fields:
+      name: { selector: "h3 a", attr: title }
+      url: { selector: "h3 a", attr: href }
+      price: { selector: "p.price_color" }
+      availability: { selector: "p.availability" }
+      rating: { selector: "p.star-rating", attr: class, map: { One: 1, Two: 2, Three: 3, Four: 4, Five: 5 } }
+      image: { selector: "img.thumbnail", attr: src }
+
+  - id: ws-laptops
+    name: "WebScraper.io · Laptops"
+    site: webscraper.io
+    category: Laptops
+    currency: USD
+    start_url: https://webscraper.io/test-sites/e-commerce/static/computers/laptops
+    max_pages: 3
+    item_selector: div.thumbnail
+    next_page_selector: "ul.pagination a[rel=next]"
+    fields:
+      name: { selector: "a.title", attr: title }
+      url: { selector: "a.title", attr: href }
+      price: { selector: "[itemprop=price]" }
+      description: { selector: "p.description" }
+      rating: { selector: "p[data-rating]", attr: data-rating }
+      reviews: { selector: "[itemprop=reviewCount]" }
+      image: { selector: "img", attr: src }
+
+  - id: ws-tablets
+    name: "WebScraper.io · Tablets"
+    site: webscraper.io
+    category: Tablets
+    currency: USD
+    start_url: https://webscraper.io/test-sites/e-commerce/static/computers/tablets
+    max_pages: 2
+    item_selector: div.thumbnail
+    next_page_selector: "ul.pagination a[rel=next]"
+    fields:
+      name: { selector: "a.title", attr: title }
+      url: { selector: "a.title", attr: href }
+      price: { selector: "[itemprop=price]" }
+      description: { selector: "p.description" }
+      rating: { selector: "p[data-rating]", attr: data-rating }
+      reviews: { selector: "[itemprop=reviewCount]" }
+      image: { selector: "img", attr: src }
+
+  - id: ws-phones
+    name: "WebScraper.io · Phones"
+    site: webscraper.io
+    category: Phones
+    currency: USD
+    start_url: https://webscraper.io/test-sites/e-commerce/static/phones/touch
+    max_pages: 2
+    item_selector: div.thumbnail
+    next_page_selector: "ul.pagination a[rel=next]"
+    fields:
+      name: { selector: "a.title", attr: title }
+      url: { selector: "a.title", attr: href }
+      price: { selector: "[itemprop=price]" }
+      description: { selector: "p.description" }
+      rating: { selector: "p[data-rating]", attr: data-rating }
+      reviews: { selector: "[itemprop=reviewCount]" }
+      image: { selector: "img", attr: src }
