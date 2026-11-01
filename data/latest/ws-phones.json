@@ -1,6 +1,6 @@
 {
   "target": "ws-phones",
-  "scraped_at": "2026-10-31T02:43:44+00:00",
+  "scraped_at": "2026-11-01T07:35:34+00:00",
   "products": [
     {
       "id": "c18076a5fcd9",
@@ -15,7 +15,7 @@
       "reviews": 10,
       "description": "White",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-10-31T02:43:44+00:00"
+      "scraped_at": "2026-11-01T07:35:34+00:00"
     },
     {
       "id": "05b3ce03059c",
@@ -30,7 +30,7 @@
       "reviews": 8,
       "description": "Silver",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-10-31T02:43:44+00:00"
+      "scraped_at": "2026-11-01T07:35:34+00:00"
     },
     {
       "id": "5b1ecb45622e",
@@ -45,7 +45,7 @@
       "reviews": 1,
       "description": "Black",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-10-31T02:43:44+00:00"
+      "scraped_at": "2026-11-01T07:35:34+00:00"
     },
     {
       "id": "dab02bc373fb",
@@ -60,7 +60,7 @@
       "reviews": 11,
       "description": "3.2\" screen",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-10-31T02:43:44+00:00"
+      "scraped_at": "2026-11-01T07:35:34+00:00"
     },
     {
       "id": "0e673a5251ec",
@@ -75,7 +75,7 @@
       "reviews": 11,
       "description": "7 day battery",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-10-31T02:43:44+00:00"
+      "scraped_at": "2026-11-01T07:35:34+00:00"
     },
     {
       "id": "9312e45b43cc",
@@ -90,7 +90,7 @@
       "reviews": 4,
       "description": "Andoid, Jolla dualboot",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-10-31T02:43:44+00:00"
+      "scraped_at": "2026-11-01T07:35:34+00:00"
     },
     {
       "id": "d798283d6d9e",
@@ -105,7 +105,7 @@
       "reviews": 3,
       "description": "5 mpx. Android 5.0",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-10-31T02:43:44+00:00"
+      "scraped_at": "2026-11-01T07:35:34+00:00"
     },
     {
       "id": "e6f0711af0e1",
@@ -120,7 +120,7 @@
       "reviews": 6,
       "description": "GPS, waterproof",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-10-31T02:43:44+00:00"
+      "scraped_at": "2026-11-01T07:35:34+00:00"
     },
     {
       "id": "b62821973500",
@@ -135,7 +135,7 @@
       "reviews": 2,
       "description": "Sapphire glass",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-10-31T02:43:44+00:00"
+      "scraped_at": "2026-11-01T07:35:34+00:00"
     }
   ]
 }
