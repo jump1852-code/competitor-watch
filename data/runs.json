@@ -334,5 +334,53 @@
     "products": 9,
     "changes": 0,
     "duration_s": 2.96
+  },
+  {
+    "run_at": "2026-11-06T07:56:46+00:00",
+    "target": "books-travel",
+    "status": "ok",
+    "products": 11,
+    "changes": 0,
+    "duration_s": 0.75
+  },
+  {
+    "run_at": "2026-11-06T07:56:46+00:00",
+    "target": "books-mystery",
+    "status": "ok",
+    "products": 32,
+    "changes": 0,
+    "duration_s": 2.84
+  },
+  {
+    "run_at": "2026-11-06T07:56:46+00:00",
+    "target": "books-science",
+    "status": "ok",
+    "products": 14,
+    "changes": 0,
+    "duration_s": 1.56
+  },
+  {
+    "run_at": "2026-11-06T07:56:46+00:00",
+    "target": "ws-laptops",
+    "status": "ok",
+    "products": 18,
+    "changes": 0,
+    "duration_s": 3.31
+  },
+  {
+    "run_at": "2026-11-06T07:56:46+00:00",
+    "target": "ws-tablets",
+    "status": "ok",
+    "products": 12,
+    "changes": 0,
+    "duration_s": 3.08
+  },
+  {
+    "run_at": "2026-11-06T07:56:46+00:00",
+    "target": "ws-phones",
+    "status": "ok",
+    "products": 9,
+    "changes": 0,
+    "duration_s": 3.01
   }
 ]

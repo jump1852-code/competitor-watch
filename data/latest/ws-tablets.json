@@ -1,6 +1,6 @@
 {
   "target": "ws-tablets",
-  "scraped_at": "2026-11-05T07:56:10+00:00",
+  "scraped_at": "2026-11-06T07:56:46+00:00",
   "products": [
     {
       "id": "11e5cd59a66d",
@@ -15,7 +15,7 @@
       "reviews": 7,
       "description": "7\" screen, Android, 16GB",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-11-05T07:56:10+00:00"
+      "scraped_at": "2026-11-06T07:56:46+00:00"
     },
     {
       "id": "d2cdd1d428b9",
@@ -30,7 +30,7 @@
       "reviews": 3,
       "description": "6\" screen, wifi",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-11-05T07:56:10+00:00"
+      "scraped_at": "2026-11-06T07:56:46+00:00"
     },
     {
       "id": "a75ff21dbb61",
@@ -45,7 +45,7 @@
       "reviews": 14,
       "description": "7\" screen, Android, 8GB",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-11-05T07:56:10+00:00"
+      "scraped_at": "2026-11-06T07:56:46+00:00"
     },
     {
       "id": "731f05aff2d2",
@@ -60,7 +60,7 @@
       "reviews": 9,
       "description": "12.2\", 32GB, WiFi, Android 4.4, White",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-11-05T07:56:10+00:00"
+      "scraped_at": "2026-11-06T07:56:46+00:00"
     },
     {
       "id": "71963ea72a4a",
@@ -75,7 +75,7 @@
       "reviews": 14,
       "description": "16GB, White",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-11-05T07:56:10+00:00"
+      "scraped_at": "2026-11-06T07:56:46+00:00"
     },
     {
       "id": "819531bce80d",
@@ -90,7 +90,7 @@
       "reviews": 2,
       "description": "7\", 8GB, Wi-Fi, Android 4.2, White",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-11-05T07:56:10+00:00"
+      "scraped_at": "2026-11-06T07:56:46+00:00"
     },
     {
       "id": "9f467128b917",
@@ -105,7 +105,7 @@
       "reviews": 1,
       "description": "LTE (SM-T235), Quad-Core 1.2GHz, 8GB, Black",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-11-05T07:56:10+00:00"
+      "scraped_at": "2026-11-06T07:56:46+00:00"
     },
     {
       "id": "7dbf42e32019",
@@ -120,7 +120,7 @@
       "reviews": 9,
       "description": "Blue, 7\" IPS, Quad-Core 1.3GHz, 8GB, 3G, Android 4.2",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-11-05T07:56:10+00:00"
+      "scraped_at": "2026-11-06T07:56:46+00:00"
     },
     {
       "id": "87375b64a61a",
@@ -135,7 +135,7 @@
       "reviews": 7,
       "description": "Black, 7\" IPS, Quad-Core 1.2GHz, 8GB, Android 4.2",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-11-05T07:56:10+00:00"
+      "scraped_at": "2026-11-06T07:56:46+00:00"
     },
     {
       "id": "301c07d6c5bc",
@@ -150,7 +150,7 @@
       "reviews": 8,
       "description": "Wi-Fi + Cellular, 32GB, Silver",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-11-05T07:56:10+00:00"
+      "scraped_at": "2026-11-06T07:56:46+00:00"
     },
     {
       "id": "7f7c565ce0ad",
@@ -165,7 +165,7 @@
       "reviews": 7,
       "description": "7\" screen, Android",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-11-05T07:56:10+00:00"
+      "scraped_at": "2026-11-06T07:56:46+00:00"
     },
     {
       "id": "c9ec9a063f68",
@@ -180,7 +180,7 @@
       "reviews": 11,
       "description": "White, 7\", Atom 1.2GHz, 8GB, Android 4.4",
       "image": "https://webscraper.io/images/test-sites/e-commerce/items/cart2.png",
-      "scraped_at": "2026-11-05T07:56:10+00:00"
+      "scraped_at": "2026-11-06T07:56:46+00:00"
     }
   ]
 }
