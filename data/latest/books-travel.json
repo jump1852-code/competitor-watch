@@ -1,6 +1,6 @@
 {
   "target": "books-travel",
-  "scraped_at": "2026-11-08T07:24:09+00:00",
+  "scraped_at": "2026-11-09T07:59:32+00:00",
   "products": [
     {
       "id": "467d323e5e77",
@@ -15,7 +15,7 @@
       "reviews": null,
       "description": null,
       "image": "https://books.toscrape.com/media/cache/d7/0f/d70f7edd92705c45a82118c3ff6c299d.jpg",
-      "scraped_at": "2026-11-08T07:24:09+00:00"
+      "scraped_at": "2026-11-09T07:59:32+00:00"
     },
     {
       "id": "e960aefcb1e1",
@@ -30,7 +30,7 @@
       "reviews": null,
       "description": null,
       "image": "https://books.toscrape.com/media/cache/4e/15/4e15150388702ebca2c5a523ac270539.jpg",
-      "scraped_at": "2026-11-08T07:24:09+00:00"
+      "scraped_at": "2026-11-09T07:59:32+00:00"
     },
     {
       "id": "7c82da85db43",
@@ -45,7 +45,7 @@
       "reviews": null,
       "description": null,
       "image": "https://books.toscrape.com/media/cache/db/46/db46159b05faa5d95262112bf9c29ddd.jpg",
-      "scraped_at": "2026-11-08T07:24:09+00:00"
+      "scraped_at": "2026-11-09T07:59:32+00:00"
     },
     {
       "id": "efb654a767fd",
@@ -60,7 +60,7 @@
       "reviews": null,
       "description": null,
       "image": "https://books.toscrape.com/media/cache/57/77/57770cac1628f4407636635f4b85e88c.jpg",
-      "scraped_at": "2026-11-08T07:24:09+00:00"
+      "scraped_at": "2026-11-09T07:59:32+00:00"
     },
     {
       "id": "072be6c84d42",
@@ -75,7 +75,7 @@
       "reviews": null,
       "description": null,
       "image": "https://books.toscrape.com/media/cache/27/a5/27a53d0bb95bdd88288eaf66c9230d7e.jpg",
-      "scraped_at": "2026-11-08T07:24:09+00:00"
+      "scraped_at": "2026-11-09T07:59:32+00:00"
     },
     {
       "id": "0be4ad5ebb6f",
@@ -90,7 +90,7 @@
       "reviews": null,
       "description": null,
       "image": "https://books.toscrape.com/media/cache/06/81/0681530a7bc301caf5c3257e1b0f0750.jpg",
-      "scraped_at": "2026-11-08T07:24:09+00:00"
+      "scraped_at": "2026-11-09T07:59:32+00:00"
     },
     {
       "id": "3403c1825416",
@@ -105,7 +105,7 @@
       "reviews": null,
       "description": null,
       "image": "https://books.toscrape.com/media/cache/9a/7e/9a7e63f12829df4b43b31d110bf3dc2e.jpg",
-      "scraped_at": "2026-11-08T07:24:09+00:00"
+      "scraped_at": "2026-11-09T07:59:32+00:00"
     },
     {
       "id": "22219a72989c",
@@ -120,7 +120,7 @@
       "reviews": null,
       "description": null,
       "image": "https://books.toscrape.com/media/cache/76/de/76de41867f323d7f1f4fbe2fdfc1b2ba.jpg",
-      "scraped_at": "2026-11-08T07:24:09+00:00"
+      "scraped_at": "2026-11-09T07:59:32+00:00"
     },
     {
       "id": "8ae856f60764",
@@ -135,7 +135,7 @@
       "reviews": null,
       "description": null,
       "image": "https://books.toscrape.com/media/cache/e0/4f/e04f8eda2a2fa947aec17640202d9ab0.jpg",
-      "scraped_at": "2026-11-08T07:24:09+00:00"
+      "scraped_at": "2026-11-09T07:59:32+00:00"
     },
     {
       "id": "6930c75a8186",
@@ -150,7 +150,7 @@
       "reviews": null,
       "description": null,
       "image": "https://books.toscrape.com/media/cache/98/c2/98c2e95c5fd1a4e7cd5f2b63c52826cb.jpg",
-      "scraped_at": "2026-11-08T07:24:09+00:00"
+      "scraped_at": "2026-11-09T07:59:32+00:00"
     },
     {
       "id": "2e3014710b61",
@@ -165,7 +165,7 @@
       "reviews": null,
       "description": null,
       "image": "https://books.toscrape.com/media/cache/d5/bf/d5bf0090470b0b8ea46d9c166f7895aa.jpg",
-      "scraped_at": "2026-11-08T07:24:09+00:00"
+      "scraped_at": "2026-11-09T07:59:32+00:00"
     }
   ]
 }
